@@ -35,6 +35,6 @@ jobs:
         port: 21098
         username: ${{ secrets.MOVIEQART_PRODUCTION_SITE_USER }}
         password:  ${{ secrets.MOVIEQART_PRODUCTION_SITE_PASSWORD }}
-        localDir: 'home'
+        localDir: '/'
         remoteDir: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER_DIR }}
         dryRun: true # use dryRun for test
