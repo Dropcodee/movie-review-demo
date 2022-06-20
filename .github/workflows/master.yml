@@ -29,16 +29,12 @@ jobs:
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: wangyucode/sftp-upload-action@v1.3.2
       with:
-        server: sftp.flywave.co
-        username: flywwjyj
-        password: bnWyQ5bX1sgF
-        server-dir: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER_DIR }}
-        port: 21
-        log-level: verbose
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/vendor/**
+        host: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER }}
+        port: 21098
+        username: ${{ secrets.MOVIEQART_PRODUCTION_SITE_USER }}
+        password:  ${{ secrets.MOVIEQART_PRODUCTION_SITE_PASSWORD }}
+        localDir: 'home'
+        remoteDir: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER_DIR }}
+        dryRun: true # use dryRun for test
