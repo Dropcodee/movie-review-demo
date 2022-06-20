@@ -37,4 +37,4 @@ jobs:
         password:  ${{ secrets.MOVIEQART_PRODUCTION_SITE_PASSWORD }}
         localDir: '/'
         remoteDir: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER_DIR }}
-        dryRun: true # use dryRun for test
+        dryRun: false # use dryRun for test
