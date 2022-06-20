@@ -31,9 +31,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER }}
-        username: ${{ secrets.MOVIEQART_PRODUCTION_SITE_USER }}
-        password: ${{ secrets.MOVIEQART_PRODUCTION_SITE_PASSWORD }}
+        server: sftp.flywave.co
+        username: flywwjyj
+        password: bnWyQ5bX1sgF
         server-dir: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER_DIR }}
         port: 21
         log-level: verbose
