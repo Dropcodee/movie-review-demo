@@ -29,4 +29,6 @@ jobs:
         server: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER }}
         username: ${{ secrets.MOVIEQART_PRODUCTION_SITE_USER }}
         password: ${{ secrets.MOVIEQART_PRODUCTION_SITE_PASSWORD }}
+        port: 21
+        protocol: ftp
         server-dir: ${{ secrets.MOVIEQART_PRODUCTION_SITE_SERVER_DIR }}
