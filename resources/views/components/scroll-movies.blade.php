@@ -64,7 +64,7 @@
                                     <div class="ml-3">
                                         <textarea placeholder="What do yiu think..." class="p-3 border border-gray-200 ring-0 focus:ring-0 focus:border-0"></textarea>
                                         <button
-                                            class="block px-4 py-2 mt-3 tracking-wide bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>
+                                            class="block px-4 py-2 mt-3 tracking-wide transition-all duration-500 ease-in-out bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@
                                     <div class="ml-3">
                                         <textarea placeholder="What do yiu think..." class="p-3 border border-gray-200 ring-0 focus:ring-0 focus:border-0"></textarea>
                                         <button
-                                            class="block px-4 py-2 mt-3 tracking-wide bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>
+                                            class="block px-4 py-2 mt-3 tracking-wide transition-all duration-500 ease-in-out bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +146,7 @@
                                     <div class="ml-3">
                                         <textarea placeholder="What do yiu think..." class="p-3 border border-gray-200 ring-0 focus:ring-0 focus:border-0"></textarea>
                                         <button
-                                            class="block px-4 py-2 mt-3 tracking-wide bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>
+                                            class="block px-4 py-2 mt-3 tracking-wide transition-all duration-500 ease-in-out bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@
                                     <div class="ml-3">
                                         <textarea placeholder="What do yiu think..." class="p-3 border border-gray-200 ring-0 focus:ring-0 focus:border-0"></textarea>
                                         <button
-                                            class="block px-4 py-2 mt-3 tracking-wide bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>
+                                            class="block px-4 py-2 mt-3 tracking-wide transition-all duration-500 ease-in-out bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>
                                     </div>
                                 </div>
                             </div>
