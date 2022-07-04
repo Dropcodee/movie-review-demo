@@ -17,7 +17,7 @@
             spaceBetween: 0,
         },
     },
-})" class="relative flex flex-row w-10/12 mx-auto">
+})" class="relative flex flex-row w-11/12 mx-auto md:w-10/12">
     <div class="absolute inset-y-0 left-0 z-10 flex items-center">
         <button @click="swiper.slidePrev()"
             class="flex items-center justify-center w-10 h-10 -ml-2 bg-white rounded-full shadow lg:-ml-4 focus:outline-none">
@@ -59,9 +59,9 @@
                                                 d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                         </svg></span>
                                 </p>
-                                <div class="flex items-start">
-                                    <p class="text-xl">Comment: </p>
-                                    <div class="ml-3">
+                                <div class="flex flex-wrap items-start">
+                                    <p class="my-2 text-xl md:my-0">Comment: </p>
+                                    <div class="ml-0 sm:ml-3">
                                         <textarea placeholder="What do yiu think..." class="p-3 border border-gray-200 ring-0 focus:ring-0 focus:border-0"></textarea>
                                         <button
                                             class="block px-4 py-2 mt-3 tracking-wide transition-all duration-500 ease-in-out bg-gray-200 border-0 hover:bg-red-800 hover:text-gray-100 ">Comment</button>

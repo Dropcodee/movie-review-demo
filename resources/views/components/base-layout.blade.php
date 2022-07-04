@@ -19,11 +19,36 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-013K4LNBD8"></script>
 
 <body>
+    <header>
+        <x-desktop-navbar />
+        @include('partials._home-hero')
+    </header>
     {{ $slot }}
-    <x-main-footer />
+    @include('partials._footer')
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function IconToggle(e) {
+            let menuList = document.querySelector('#menu')
+            let classArr = ['opacity-100', 'top-[80px]']
+            let removeClassArr = ['opacity-0', 'top-[-100px]']
+            console.log(e.name)
+            if (e.name === 'menu-outline') {
+                e.name = 'close-outline'
+                menuList.classList.remove(...removeClassArr)
+                menuList.classList.add(...classArr)
+                console.log(e.name)
+            } else if (e.name === 'close-outline') {
+                e.name = 'menu-outline'
+                menuList.classList.remove(...classArr)
+                menuList.classList.add(...removeClassArr)
+                console.log(e.name)
+            }
+        }
+    </script>
 </body>
 
 </html>

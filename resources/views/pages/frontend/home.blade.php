@@ -1,8 +1,4 @@
 <x-base-layout>
-    <header>
-        <x-desktop-navbar />
-        @include('partials._home-hero')
-    </header>
     <main>
         <section class="w-full mt-12">
             <x-scroll-movies />
