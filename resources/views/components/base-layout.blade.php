@@ -18,7 +18,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-013K4LNBD8"></script>
 
-<body>
+<body x-data="{ open: false }">
     <header>
         <x-desktop-navbar />
         @include('partials._home-hero')
@@ -35,17 +35,17 @@
             let menuList = document.querySelector('#menu')
             let classArr = ['opacity-100', 'top-[80px]']
             let removeClassArr = ['opacity-0', 'top-[-100px]']
-            console.log(e.name)
+            // console.log(e.name)
             if (e.name === 'menu-outline') {
                 e.name = 'close-outline'
                 menuList.classList.remove(...removeClassArr)
                 menuList.classList.add(...classArr)
-                console.log(e.name)
+                // console.log(e.name)
             } else if (e.name === 'close-outline') {
                 e.name = 'menu-outline'
                 menuList.classList.remove(...classArr)
                 menuList.classList.add(...removeClassArr)
-                console.log(e.name)
+                // console.log(e.name)
             }
         }
     </script>
