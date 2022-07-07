@@ -28,8 +28,8 @@
                         focus:border-primary">
                     </div>
                     <div class="my-3">
-                        <label for="username" class="block w-full mb-1 text-gray-500">Enter Password:</label>
-                        <input type="password" placeholder="Dropcode" name="username"
+                        <label for="password" class="block w-full mb-1 text-gray-500">Enter Password:</label>
+                        <input type="password" placeholder="Dropcode" name="password"
                             class="w-full
                         rounded
                         py-3
@@ -44,13 +44,80 @@
                         <button
                             class="w-full p-3 tracking-wide text-gray-300 transition-all duration-500 ease-in-out bg-gray-800 hover:bg-red-800">Login</button>
                     </div>
-                    <p>Don't Have an account yet ? <span class="text-red-800 underline" x-data
+                    <p class="text-gray-400">Don't Have an account yet ? <span
+                            class="text-red-800 underline cursor-pointer" x-data
                             @click="authPage = 'register'">Register</span></p>
                 </div>
             </div>
         </div>
         <div x-show="authPage === 'register'" x-transition:enter.duration.500ms x-transition:leave.duration.400ms>
-            <p>Register</p>
+            <div class="px-6 py-3 md:px-12 md:py-2">
+                <div class="mb-4 text-center">
+                    <h2 class="text-xl tracking-wide md:text-3xl">Register</h2>
+                    <p class="text-sm text-gray-400">Register to Review all your favorite movies</p>
+                </div>
+                <div class="grid w-full grid-cols-1">
+                    <div class="my-3">
+                        <label for="username" class="block w-full mb-1 text-gray-500">Enter Username:</label>
+                        <input type="text" placeholder="Dropcode" name="username"
+                            class="w-full
+                        rounded
+                        py-3
+                        px-[14px]
+                        text-body-color text-base
+                        border border-[f0f0f0]
+                        outline-none
+                        focus-visible:shadow-none
+                        focus:border-primary">
+                    </div>
+                    <div class="my-3">
+                        <label for="fullname" class="block w-full mb-1 text-gray-500">Enter Fullname:</label>
+                        <input type="text" placeholder="scarlet johnson" name="fullname"
+                            class="w-full
+                        rounded
+                        py-3
+                        px-[14px]
+                        text-body-color text-base
+                        border border-[f0f0f0]
+                        outline-none
+                        focus-visible:shadow-none
+                        focus:border-primary">
+                    </div>
+                    <div class="my-3">
+                        <label for="email" class="block w-full mb-1 text-gray-500">Enter Email:</label>
+                        <input type="email" placeholder="scarlet@gmail.com" name="email"
+                            class="w-full
+                        rounded
+                        py-3
+                        px-[14px]
+                        text-body-color text-base
+                        border border-[f0f0f0]
+                        outline-none
+                        focus-visible:shadow-none
+                        focus:border-primary">
+                    </div>
+                    <div class="my-3">
+                        <label for="password" class="block w-full mb-1 text-gray-500">Enter Password:</label>
+                        <input type="password" placeholder="Dropcode" name="password"
+                            class="w-full
+                        rounded
+                        py-3
+                        px-[14px]
+                        text-body-color text-base
+                        border border-[f0f0f0]
+                        outline-none
+                        focus-visible:shadow-none
+                        focus:border-primary">
+                    </div>
+                    <div class="my-8">
+                        <button
+                            class="w-full p-3 tracking-wide text-gray-300 transition-all duration-500 ease-in-out bg-gray-800 hover:bg-red-800">Register</button>
+                    </div>
+                    <p class="text-gray-400">Already Have an account ? <span
+                            class="text-red-800 underline cursor-pointer" x-data
+                            @click="authPage = 'login'">Login</span></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
