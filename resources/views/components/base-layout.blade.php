@@ -13,12 +13,23 @@
         href="https://mir-s3-cdn-cf.behance.net/project_modules/disp/75269f144806585.62933cebd2035.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-013K4LNBD8"></script>
 
-<body x-data="{ open: false }">
+<body x-data="{
+    open: false,
+    authPage: 'login',
+    toggle() {
+        this.open = !this.open;
+    },
+    triggerAuth() {
+        this.open = !this.open;
+        this.authPage = 'login';
+    }
+}">
     <header>
         <x-desktop-navbar />
         @include('partials._home-hero')
@@ -27,7 +38,6 @@
     @include('partials._footer')
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
